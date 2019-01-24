@@ -13,7 +13,7 @@ pipeline {
 			agent {
 				docker {
 				  // Set both label and image
-				  label 'docker'
+				  label 'dockerserver'
 				  image 'node:6-alpine'
 				  args '-p 3000:3000 -p 5000:5000'
 				}
@@ -27,7 +27,7 @@ pipeline {
 			agent {
 				docker {
 				  // Set both label and image
-				  label 'docker'
+				  label 'dockerserver'
 				  image 'node:6-alpine'
 				  args '-p 3000:3000 -p 5000:5000'
 				}
